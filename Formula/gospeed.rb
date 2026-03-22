@@ -5,21 +5,21 @@
 class Gospeed < Formula
   desc "Fast, zero-dependency network speed testing tool"
   homepage "https://gospeed.goozt.org"
-  version "1.3.3"
+  version "1.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/goozt/gospeed/releases/download/v1.3.3/gospeed_1.3.3_darwin_amd64.tar.gz"
-      sha256 "7b7a9b081a8bff5d5251a3ae6ba38f2680db5684bbe4bb964b05f00e0539bc15"
+      url "https://github.com/goozt/gospeed/releases/download/v1.3.4/gospeed_1.3.4_darwin_amd64.tar.gz"
+      sha256 "5c9a1ea86daccbfa1b8e513d5f3495730890767e71743462803e9dcea42d436b"
 
       define_method(:install) do
         bin.install "gospeed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/goozt/gospeed/releases/download/v1.3.3/gospeed_1.3.3_darwin_arm64.tar.gz"
-      sha256 "7101aae92b64ab54e51b1dbffba81b184743e91fd6151d544e8ea0174d95492c"
+      url "https://github.com/goozt/gospeed/releases/download/v1.3.4/gospeed_1.3.4_darwin_arm64.tar.gz"
+      sha256 "00af787907d21bcd5c72d90535ee1ea115fb44c11e1f52908aba1c11862b69bd"
 
       define_method(:install) do
         bin.install "gospeed"
@@ -29,22 +29,22 @@ class Gospeed < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/goozt/gospeed/releases/download/v1.3.3/gospeed_1.3.3_linux_amd64.tar.gz"
-      sha256 "417a911ddb547f45947c0d1a1aa9f4de2299abada5777785bf081f34f142a89a"
+      url "https://github.com/goozt/gospeed/releases/download/v1.3.4/gospeed_1.3.4_linux_amd64.tar.gz"
+      sha256 "e3f0eb6db0d645b6aabaa17866752ace67564e4259274805725c2b94643bbe40"
       define_method(:install) do
         bin.install "gospeed"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/goozt/gospeed/releases/download/v1.3.3/gospeed_1.3.3_linux_arm.tar.gz"
-      sha256 "3d4da4973b901e57687d093a9ce46b9ff06672964ec33870bf6a2701f35d344e"
+      url "https://github.com/goozt/gospeed/releases/download/v1.3.4/gospeed_1.3.4_linux_arm.tar.gz"
+      sha256 "891cf4de5a177794238022233d13e40e28517067cfa91797d567d122479646eb"
       define_method(:install) do
         bin.install "gospeed"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/goozt/gospeed/releases/download/v1.3.3/gospeed_1.3.3_linux_arm64.tar.gz"
-      sha256 "b3fd7e4cbab4289e93d4283c4e43e3eaea33a4e9cb4ed64f8b86cc4b3e89ebe9"
+      url "https://github.com/goozt/gospeed/releases/download/v1.3.4/gospeed_1.3.4_linux_arm64.tar.gz"
+      sha256 "61c05ef48d072fe63e70e76223611dcda4066167e9ddd1e0a725cc3f74ebed08"
       define_method(:install) do
         bin.install "gospeed"
       end
